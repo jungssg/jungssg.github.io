@@ -40,9 +40,19 @@
 						<!-- Panel (Spotlight) -->
 							<section class="panel spotlight medium right" id="first">
                                 <style>
-                                    .artist, .artist1, .album, .album1, .agency, .agency1, .genre, .genre1 {
+                                    .artist, .album, .agency, .genre {
                                         display: inline-block;
                                         width: 100px; /* 글자 너비를 동일하게 조정 */
+                                        overflow: hidden;
+                                        text-overflow: ellipsis; /* 글자가 너무 길 경우 말줄임표(...)로 표시 */
+                                        white-space: nowrap; /* 글자가 한 줄에 나타나도록 설정 */
+                                    }
+                                </style>
+                                <style>
+                                    .artist1, .album1, .agency1, .genre1
+                                    {
+                                        display: inline-block;
+                                        width: 200px; /* 글자 너비를 동일하게 조정 */
                                         overflow: hidden;
                                         text-overflow: ellipsis; /* 글자가 너무 길 경우 말줄임표(...)로 표시 */
                                         white-space: nowrap; /* 글자가 한 줄에 나타나도록 설정 */
