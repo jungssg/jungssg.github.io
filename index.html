@@ -687,6 +687,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="module">
+  				// Import the functions you need from the SDKs you need
+  				import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  				import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics.js";
+  				// TODO: Add SDKs for Firebase products that you want to use
+  				// https://firebase.google.com/docs/web/setup#available-libraries
+
+				  // Your web app's Firebase configuration
+				  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+				  const firebaseConfig = {
+				    apiKey: "AIzaSyB6qIViHm4uijT9SURsMe_oDuFnygdbgdA",
+				    authDomain: "jscrooked-newpj.firebaseapp.com",
+				    projectId: "jscrooked-newpj",
+				    storageBucket: "jscrooked-newpj.appspot.com",
+				    messagingSenderId: "322769396509",
+ 				   appId: "1:322769396509:web:302990bfd909578c74f7f4",
+ 				   measurementId: "G-J9DLJFP0DQ"
+ 				 };
+
+ 				 // Initialize Firebase
+				  const app = initializeApp(firebaseConfig);
+				  const analytics = getAnalytics(app);
+				</script>
 
 	</body>
 </html>
